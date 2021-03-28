@@ -4,4 +4,5 @@
 //import './component-basic/props-basic-1'
 //import './component-basic/props-children'
 //import './component-basic/function-component'
-import './component-intermediate/state-study'
+//import './component-intermediate/state-study'
+import './component-intermediate/set-state-caveat'
