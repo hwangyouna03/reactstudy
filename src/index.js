@@ -5,4 +5,6 @@
 //import './component-basic/props-children'
 //import './component-basic/function-component'
 //import './component-intermediate/state-study'
-import './component-intermediate/set-state-caveat'
+//import './component-intermediate/set-state-caveat'
+//import './component-intermediate/shallow-merge-caveat'
+import './component-intermediate/manipulate-list'

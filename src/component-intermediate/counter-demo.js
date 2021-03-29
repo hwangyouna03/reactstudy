@@ -33,7 +33,7 @@ class Counter extends Component {
                 <button onClick={this.increment}>+</button>
                 <button onClick={this.decrement}>-</button>
                 {/* Q2) 5, 10만큼 증가시키는 두 개의 버튼을 추가하여 Q1에서 정의한 add 메소드를 호출하도록 수정 */}
-                <button onClick{this.add(5)}>+5</button> /*onClick으로 this.add(5)를 호출한 결과값을 반환
+                <button onClick={this.add(5)}>+5</button> /*onClick으로 this.add(5)를 호출한 결과값을 반환
                 onClick으로 this.add(10)을 호출하는 역할을 하는 함수를 생성하여 전달*/
                 <button onClick={() => {this.add(10)}}>+10</button>
             </div>
