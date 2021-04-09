@@ -9,7 +9,8 @@ class Timer extends Component {
         this.state = {
             time: this.props.time,
             timeout: false,
-            intervalId: null
+            intervalId: null,
+            stop:false
         }
     }
 
@@ -17,17 +18,18 @@ class Timer extends Component {
         // 타이머 설정 (원래 이렇게 하면 안되지만 일단 실행은 됨)
         this.state.intervalId = setInterval(() => {
             this.setState((state) => {
-                if( state.time === 1 ) {
-                    clearTimeout(this.state.intervalId)
-                    return { timeout: true, time: state.time - 1}
-                } else {
-                    return { time: state.time - 1 }
+                if(!state.stop) {
+                    if (state.time === 1) {
+                        clearTimeout(this.state.intervalId)
+                        return {timeout: true, time: state.time - 1}
+                    } else {
+                        return {time: state.time - 1}
+                    }
                 }
             })
         }, 1000)
     }
     
-    //타이머 멈추기
 
     componentWillUnmount() {
         // 타이머 해제
@@ -38,8 +40,8 @@ class Timer extends Component {
         return (
             <div>
                 {this.state.timeout ? <h2>timeout</h2> : <h2>{this.state.time}</h2>}
-                <button onClick={() => this.setState({ mount : true })}>stop</button>
-                <button onClick={() => this.setState({ mount : true })}>resume</button>
+                <button onClick={() => this.setState({ stop : true })}>stop</button>
+                <button onClick={() => this.setState({ stop : false })}>resume</button>
             </div>
         );
     }
