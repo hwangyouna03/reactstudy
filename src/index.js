@@ -16,4 +16,5 @@
 //import './component-advanced/ref-demo.js'
 // import './component-advanced/controlled-component.js'
 //import './component-advanced/reservation-form.js'
-import './component-intermediate/lifecycle-method-component-did-update.js'
+//import './component-intermediate/lifecycle-method-component-did-update.js'
+import './component-basic/props-basic-1.js'
