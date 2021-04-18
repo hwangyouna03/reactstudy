@@ -14,7 +14,8 @@ console.log(img)
 
 const rootElement = document.getElementById("root")
 //리액트 요소 그리기
-ReactDOM.render(img, rootElement)
+//ReactDOM.render(img, rootElement)
+
 
 const paragraph = React.createElement(
     'p',

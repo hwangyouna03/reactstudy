@@ -28,3 +28,5 @@ const JSXwithExpressions = (
         &nbsp;{person.name.length}
         &nbsp;{double(person.age)}
     </h1>)
+
+ReactDOM.render(JSXwithExpressions, document.getElementById("root"))
