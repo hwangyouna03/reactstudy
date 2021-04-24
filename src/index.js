@@ -20,4 +20,6 @@
 //import './component-intermediate/lifecycle-method-component-did-update.js'
 //import './component-basic/props-basic-1.js'
 //import './component-intermediate/counter-demo.js'
-import './make-image-slider-3218-hwangyuna'
+//import './make-image-slider-3218-hwangyuna'
+import './component-advanced/context-api'
+//import './component-advanced/context-api-theme-context'
